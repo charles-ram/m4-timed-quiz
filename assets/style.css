@@ -1,0 +1,73 @@
+* {
+
+}
+
+.main-header div {
+    display: inline-block;
+}
+
+.charles-socials ul li {
+    display: inline;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    margin: 15vh 20vw 70vh;
+    border: solid 5px;
+    border-radius: 15px;
+    padding: 20px;
+    height: 300px;
+}
+
+.card header {
+    flex: 1;
+    text-align: center;
+    height: 30px;
+    font-size: 25px;
+}
+
+.card section {
+    flex: 1;
+    margin: 20px;
+    height: 200px;
+}
+
+.card footer {
+    flex: 1;
+    align-items: center;
+    height: 70px;
+}
+
+.answer-list ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#rules-card {
+    display: none; /* Dont Forget to Undo Me */
+}
+
+#questionOne {
+    display: none; /* Dont Forget to Undo Me */
+}
+
+#questionTwo {
+    /* Dont Forget to Undo Me */
+}
+
+#questionThree {
+    /* Dont Forget to Undo Me */
+}
+
+#questionFour {
+    /* Dont Forget to Undo Me */
+}
+
+#questionFive {
+    /* Dont Forget to Undo Me */
+}
