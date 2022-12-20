@@ -13,7 +13,7 @@
 .card {
     flex: 1;
     text-align: center;
-    margin: 15vh 20vw 70vh;
+    margin: 15vh 20vw 20vh;
     border: solid 5px;
     border-radius: 15px;
     padding: 20px;
@@ -39,6 +39,10 @@
     height: 70px;
 }
 
+.current-question-number {
+    text-align: right;
+}
+
 .answer-list ul {
     height: 100%;
     list-style: none;
@@ -48,26 +52,32 @@
     margin: 0;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+}
+
 #rules-card {
-    display: none; /* Dont Forget to Undo Me */
+    /* display: none; /* Dont Forget to Undo Me */
 }
 
-#questionOne {
-    display: none; /* Dont Forget to Undo Me */
+#question-one {
+    /* display: none; /* Dont Forget to Undo Me */
 }
 
-#questionTwo {
-    /* Dont Forget to Undo Me */
+#question-two {
+    /* display: none; /* Dont Forget to Undo Me */
 }
 
-#questionThree {
-    /* Dont Forget to Undo Me */
+#question-three {
+    /* display: none; /* Dont Forget to Undo Me */
 }
 
-#questionFour {
-    /* Dont Forget to Undo Me */
+#question-four {
+    /* display: none; /* Dont Forget to Undo Me */
 }
 
-#questionFive {
-    /* Dont Forget to Undo Me */
+#question-five {
+    /* display: none; /* Dont Forget to Undo Me */
 }

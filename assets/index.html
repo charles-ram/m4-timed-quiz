@@ -13,7 +13,7 @@
   <header class="main-header">
 
     <div class="view-score">
-      <span>View Scores</span>
+      <button class="view-score-header" onclick="showScore()">View Score</button>
     </div>
     
     <div class="charles-socials">
@@ -39,33 +39,34 @@
     </section>
 
     <div class="buttons">
-      <button class="start-button">Start Quiz</button>
+      <button class="start-button" onclick="startQuiz()">Start Quiz</button>
     </div>
 
   </div>
 
-  <div class="card" id="questionOne">
+  <div class="card" id="question-one">
     
     <header class="question">
-      <span>Question 1</span>
+      <span>Which HTML element to we put the Javascript?</span>
     </header>
     
     <section class="answer-list">
       <ul>
-        <li><a href="correct-answer">Answer 1</a></li>
-        <li><a href="incorrect-answer">Answer 2</a></li>
-        <li><a href="incorrect-answer">Answer 3</a></li>
-        <li><a href="incorrect-answer">Answer 4</a></li>
+        <li><button class="correct-answer" onclick="correctAnswerOne()">&ltscript&gt</button></li>
+        <li><button class="incorrect-answer">&ltjavascript&gt</button></li>
+        <li><button class="incorrect-answer">&ltscripting&gt</button></li>
+        <li><button class="incorrect-answer">&lt js &gt</button></li>
       </ul>
     </section>
 
     <div class="buttons">
-      <button class="start-over-button">Start Over</button>
+      <button class="start-over-button" onclick="startOver()">Start Over</button>
+      <span class="current-question-number">1 of 5</span>
     </div>
 
   </div>
 
-  <div class="card" id="questionTwo">
+  <div class="card" id="question-two">
     
     <header class="question">
       <span>Which operator is used to assign a value to a variable?</span>
@@ -73,20 +74,21 @@
     
     <section class="answer-list">
       <ul>
-        <li><a href="correct-answer">=</a></li>
-        <li><a href="incorrect-answer">+</a></li>
-        <li><a href="incorrect-answer">-</a></li>
-        <li><a href="incorrect-answer">*</a></li>
+        <li><button class="correct-answer" onclick="correctAnswerTwo()">=</button></li>
+        <li><button class="incorrect-answer">+</button></li>
+        <li><button class="incorrect-answer">-</button></li>
+        <li><button class="incorrect-answer">*</button></li>
       </ul>
     </section>
 
     <div class="buttons">
-      <button class="start-over-button">Start Over</button>
+      <button class="start-over-button" onclick="startOver()">Start Over</button>
+      <span class="current-question-number">2 of 5</span>
     </div>
 
   </div>
 
-  <div class="card" id="questionThree">
+  <div class="card" id="question-three">
     
     <header class="question">
       <span>Which event occurs when the user clicks on an HTML element?</span>
@@ -94,20 +96,21 @@
     
     <section class="answer-list">
       <ul>
-        <li><a href="correct-answer">onclick</a></li>
-        <li><a href="incorrect-answer">onmouseover</a></li>
-        <li><a href="incorrect-answer">onmouseclick</a></li>
-        <li><a href="incorrect-answer">onchange</a></li>
+        <li><button class="correct-answer" onclick="correctAnswerThree()">onclick</button></li>
+        <li><button class="incorrect-answer">onmouseover</button></li>
+        <li><button class="incorrect-answer">onmouseclick</button></li>
+        <li><button class="incorrect-answer">onchange</button></li>
       </ul>
     </section>
 
     <div class="buttons">
-      <button class="start-over-button">Start Over</button>
+      <button class="start-over-button" onclick="startOver()">Start Over</button>
+      <span class="current-question-number">3 of 5</span>
     </div>
 
   </div>
 
-  <div class="card" id="questionFour">
+  <div class="card" id="question-four">
     
     <header class="question">
       <span>How do you find the number with the highest value of x and y?</span>
@@ -115,22 +118,23 @@
     
     <section class="answer-list">
       <ul>
-        <li><a href="correct-answer">Math.max(x, y)</a></li>
-        <li><a href="incorrect-answer">ceil(x, y)</a></li>
-        <li><a href="incorrect-answer">Math.ceil(x, y)</a></li>
-        <li><a href="incorrect-answer">top(x, y)</a></li>
+        <li><button class="correct-answer" onclick="correctAnswerFour()">Math.max(x, y)</button></li>
+        <li><button class="incorrect-answer">ceil(x, y)</button></li>
+        <li><button class="incorrect-answer">Math.ceil(x, y)</button></li>
+        <li><button class="incorrect-answer">top(x, y)</button></li>
       </ul>
     </section>
 
     <div class="buttons">
-      <button class="start-over-button">Start Over</button>
+      <button class="start-over-button" onclick="startOver()">Start Over</button>
+      <span class="current-question-number">4 of 5</span>
     </div>
 
   </div>
 
 </div>
 
-<div class="card" id="questionFive">
+<div class="card" id="question-five">
   
   <header class="question">
     <span>How would you round 5.35 to the nearest integer?</span>
@@ -138,47 +142,57 @@
   
   <section class="answer-list">
     <ul>
-      <li><a href="correct-answer">Math.round(5.35)</a></li>
-      <li><a href="incorrect-answer">Math.rnd(5.35)</a></li>
-      <li><a href="incorrect-answer">round(5.35)</a></li>
-      <li><a href="incorrect-answer">rnd(5.35)</a></li>
+      <li><button class="correct-answer" onclick="correctAnswerFive()">Math.round(5.35)</button></li>
+      <li><button class="incorrect-answer">Math.rnd(5.35)</button></li>
+      <li><button class="incorrect-answer">round(5.35)</button></li>
+      <li><button class="incorrect-answer">rnd(5.35)</button></li>
     </ul>
   </section>
 
   <div class="buttons">
-    <button class="start-over-button">Start Over</button>
+    <button class="start-over-button" onclick="startOver()">Start Over</button>
+    <span class="current-question-number">5 of 5</span>
   </div>
 
 </div>
 
-  <!--
-  <div class="content-box-card" class="quiz-box">
-    <header>
-      <div class="title"><span>Javascript Fundamentals Quiz</span></div>
-      <div class="timer">
-        <div class="time-text">Time left:</div>
-        <div class="timer-seconds">20</div>
-      </div>
-    </header>
-    <section>
-      <div class="question">
-        <span>What does blank do?</span>
-      </div>
-      <div class="answer-list">
-        <div class="incorrect-answer">
-          <span>Incorrect Answer</span>
-        </div>
-        <div class="incorrect-answer">
-          <span>Incorrect Answer</span>
-        </div>
-        <div class="incorrect-answer">
-          <span>Incorrect Answer</span>
-        </div>
-        <div class="correct-answer">
-          <span>Correct Answer</span>
-        </div>
-      </div>
-    </section>
+<div class="card" id="input-score">
+  
+  <header class="question">
+    <span>Input your initials to save your score.</span>
+  </header>
+  
+  <section class="input-initials">
+    <label for="input-initials">Input here:</label>
+    <textarea id="initials-input" name="initials"></textarea>
+  </section>
+
+  <div class="buttons">
+    <button class="start-over-button" onclick="saveScore()">Save</button>
   </div>
-  -->
+
+</div>
+
+<div class="card" id="score-sheet">
+  
+  <header class="question">
+    <span>High Score List</span>
+  </header>
+  
+  <section class="answer-list">
+    <ul>
+
+    </ul>
+  </section>
+
+  <div class="buttons">
+    <button class="start-over-button" onclick="startOver()">Start Over</button>
+  </div>
+</div>
+
+<footer>
+  <span id="timer-countdown"></span>
+</footer>
+
+  <script src="./script.js"></script>
 </body>
