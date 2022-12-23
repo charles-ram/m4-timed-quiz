@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Timed Javascript Quiz</title>
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
   <script src="https://kit.fontawesome.com/240a9fc671.js" crossorigin="anonymous"></script>
 
 </head>
@@ -34,7 +34,7 @@
     
     <section class="rules-list">
       <div class="rules">You will have 20 seconds to answer 5 questions.</div>
-      <div class="rules">Answering incorrectly will reduce the amount of time by 2 seconds.</div>
+      <div class="rules">Answering incorrectly will reduce the amount of time by a seconds.</div>
       <div class="rules">The score is based on how many seconds you have left after answering all questions correctly.</div>
     </section>
 
@@ -52,10 +52,10 @@
     
     <section class="answer-list">
       <ul>
-        <li><button class="correct-answer" onclick="correctAnswerOne()">&ltscript&gt</button></li>
-        <li><button class="incorrect-answer">&ltjavascript&gt</button></li>
-        <li><button class="incorrect-answer">&ltscripting&gt</button></li>
-        <li><button class="incorrect-answer">&lt js &gt</button></li>
+        <li><button onclick="correctAnswerOne()">&ltscript&gt</button></li>
+        <li><button onclick="incorrectAnswer()">&ltjavascript&gt</button></li>
+        <li><button onclick="incorrectAnswer()">&ltscripting&gt</button></li>
+        <li><button onclick="incorrectAnswer()">&lt js &gt</button></li>
       </ul>
     </section>
 
@@ -74,10 +74,10 @@
     
     <section class="answer-list">
       <ul>
-        <li><button class="correct-answer" onclick="correctAnswerTwo()">=</button></li>
-        <li><button class="incorrect-answer">+</button></li>
-        <li><button class="incorrect-answer">-</button></li>
-        <li><button class="incorrect-answer">*</button></li>
+        <li><button onclick="correctAnswerTwo()">=</button></li>
+        <li><button onclick="incorrectAnswer()">+</button></li>
+        <li><button onclick="incorrectAnswer()">-</button></li>
+        <li><button onclick="incorrectAnswer()">*</button></li>
       </ul>
     </section>
 
@@ -96,10 +96,10 @@
     
     <section class="answer-list">
       <ul>
-        <li><button class="correct-answer" onclick="correctAnswerThree()">onclick</button></li>
-        <li><button class="incorrect-answer">onmouseover</button></li>
-        <li><button class="incorrect-answer">onmouseclick</button></li>
-        <li><button class="incorrect-answer">onchange</button></li>
+        <li><button onclick="correctAnswerThree()">onclick</button></li>
+        <li><button onclick="incorrectAnswer()">onmouseover</button></li>
+        <li><button onclick="incorrectAnswer()">onmouseclick</button></li>
+        <li><button onclick="incorrectAnswer()">onchange</button></li>
       </ul>
     </section>
 
@@ -118,10 +118,10 @@
     
     <section class="answer-list">
       <ul>
-        <li><button class="correct-answer" onclick="correctAnswerFour()">Math.max(x, y)</button></li>
-        <li><button class="incorrect-answer">ceil(x, y)</button></li>
-        <li><button class="incorrect-answer">Math.ceil(x, y)</button></li>
-        <li><button class="incorrect-answer">top(x, y)</button></li>
+        <li><button onclick="correctAnswerFour()">Math.max(x, y)</button></li>
+        <li><button onclick="incorrectAnswer()">ceil(x, y)</button></li>
+        <li><button onclick="incorrectAnswer()">Math.ceil(x, y)</button></li>
+        <li><button onclick="incorrectAnswer()">top(x, y)</button></li>
       </ul>
     </section>
 
@@ -142,10 +142,10 @@
   
   <section class="answer-list">
     <ul>
-      <li><button class="correct-answer" onclick="correctAnswerFive()">Math.round(5.35)</button></li>
-      <li><button class="incorrect-answer">Math.rnd(5.35)</button></li>
-      <li><button class="incorrect-answer">round(5.35)</button></li>
-      <li><button class="incorrect-answer">rnd(5.35)</button></li>
+      <li><button onclick="correctAnswerFive()">Math.round(5.35)</button></li>
+      <li><button onclick="incorrectAnswer()">Math.rnd(5.35)</button></li>
+      <li><button onclick="incorrectAnswer()">round(5.35)</button></li>
+      <li><button onclick="incorrectAnswer()">rnd(5.35)</button></li>
     </ul>
   </section>
 
@@ -164,7 +164,7 @@
   
   <section class="input-initials">
     <label for="input-initials">Input here:</label>
-    <textarea id="initials-input" name="initials"></textarea>
+    <input id="initials-input" name="initials" placeholder="Put your initials here."/>
   </section>
 
   <div class="buttons">
@@ -179,8 +179,8 @@
     <span>High Score List</span>
   </header>
   
-  <section class="answer-list">
-    <ul>
+  <section>
+    <ul id="score-list">
 
     </ul>
   </section>
@@ -191,8 +191,8 @@
 </div>
 
 <footer>
-  <span id="timer-countdown"></span>
+  <span id="timer-countdown">Timer</span>
 </footer>
 
-  <script src="./script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
